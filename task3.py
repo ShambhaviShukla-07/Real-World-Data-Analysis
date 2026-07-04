@@ -19,8 +19,9 @@ plt.bar(product_sales.index, product_sales.values)
 plt.title("Top 10 Products by Revenue")
 plt.xlabel("Product ID")
 plt.ylabel("Revenue")
+plt.savefig("barChart.png", dpi=300, bbox_inches="tight")
 plt.show()
-plt.savefig("barGraph.png")
+
 
 # Line Chart
 # Monthly Revenue
@@ -39,8 +40,9 @@ plt.title("Monthly Revenue")
 plt.xlabel("Month")
 plt.ylabel("Revenue")
 plt.grid(True)
+plt.savefig("Line_Chart.png", dpi=300, bbox_inches="tight")
 plt.show()
-plt.savefig("LineChart.png")
+
 
 # Histogram
 # Revenue Distribution
@@ -55,8 +57,9 @@ plt.hist(
 plt.title("Revenue Distribution")
 plt.xlabel("Revenue")
 plt.ylabel("Frequency")
+plt.savefig("histogram.png", dpi=300, bbox_inches="tight")
 plt.show()
-plt.savefig("histogram.png")
+
 
 # Scatter Plot
 # Quantity vs Revenue
@@ -71,8 +74,8 @@ plt.scatter(
 plt.title("Quantity vs Revenue")
 plt.xlabel("Order Quantity")
 plt.ylabel("Revenue")
+plt.savefig("ScatterPlot.png", dpi=300, bbox_inches="tight")
 plt.show()
-plt.savefig("ScatterPlot.png")
 #  Heatmap
 # Between Numeric Columns
 
@@ -91,5 +94,6 @@ sns.heatmap(
     cmap="coolwarm"
 )
 plt.title("Correlation Heatmap")
+plt.savefig("heatmap.png", dpi=300, bbox_inches="tight")
 plt.show()
-plt.savefig("heatmap.png")
+
