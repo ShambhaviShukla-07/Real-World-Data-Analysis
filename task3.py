@@ -20,6 +20,7 @@ plt.title("Top 10 Products by Revenue")
 plt.xlabel("Product ID")
 plt.ylabel("Revenue")
 plt.show()
+plt.savefig("barGraph.png")
 
 # Line Chart
 # Monthly Revenue
@@ -39,6 +40,7 @@ plt.xlabel("Month")
 plt.ylabel("Revenue")
 plt.grid(True)
 plt.show()
+plt.savefig("LineChart.png")
 
 # Histogram
 # Revenue Distribution
@@ -54,6 +56,7 @@ plt.title("Revenue Distribution")
 plt.xlabel("Revenue")
 plt.ylabel("Frequency")
 plt.show()
+plt.savefig("histogram.png")
 
 # Scatter Plot
 # Quantity vs Revenue
@@ -69,7 +72,7 @@ plt.title("Quantity vs Revenue")
 plt.xlabel("Order Quantity")
 plt.ylabel("Revenue")
 plt.show()
-
+plt.savefig("ScatterPlot.png")
 #  Heatmap
 # Between Numeric Columns
 
@@ -89,3 +92,4 @@ sns.heatmap(
 )
 plt.title("Correlation Heatmap")
 plt.show()
+plt.savefig("heatmap.png")
